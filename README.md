@@ -20,4 +20,24 @@ python -m pip install -e .
 python NERFlask.py
 ```
 
+### Setup with Docker
+
+1. Ensure your Docker engine is running
+
+2. Build the Docker image 
+
+```bash
+
+docker build -t ner-flask .
+
+```
+
+3. Run the Docker container
+
+```bash
+
+docker run --name ner-flask-container -p 5000 ner-flask
+
+```
+
 

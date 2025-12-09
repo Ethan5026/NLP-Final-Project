@@ -11,7 +11,7 @@ python -m pip install --upgrade pip
 
 ```python
 pip install -r requirements.txt
-python -e
+python -m pip install -e .
 ```
 
 4. Run the Flask application (backend)

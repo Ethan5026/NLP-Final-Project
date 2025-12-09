@@ -22,9 +22,6 @@ class QTLDataManager:
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
 
-        training_data = pd.read_json("QTL_text.json")
-        testing_data = pd.read_csv("QTL_test_unlabeled.tsv", sep="\t")
-        self.training_data = pd.concat([training_data, testing_data], ignore_index=True)
 
     def fetch_data(self, query, retmax=100):
         """Fetch data from NCBI Entrez database."""

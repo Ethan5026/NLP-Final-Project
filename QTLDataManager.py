@@ -48,7 +48,7 @@ class QTLDataManager:
         for trait in self.traits_dict:
             pattern = rf"(?<![A-Za-z0-9]){re.escape(trait)}(?![A-Za-z0-9])"
             title_matches.extend([{"Trait_Type": "dict_Trait", "Starting_Index": m.start(), "Ending_Index": m.end(), "Word": m.group()} for m in re.finditer(pattern, lower_title)])
-            abstract_matches.extend([{"starting_index": m.start(), "ending_index": m.end(), "trait": m.group()} for m in re.finditer(pattern, lower_abstract)])
+            abstract_matches.extend([{"Trait_Type": "dict_Trait", "Starting_Index": m.start(), "Ending_Index": m.end(), "Word": m.group()} for m in re.finditer(pattern, lower_abstract)])
 
 
         return {"PMID": query, "Title": title.replace('\n',''), "Abstract": abstract.replace('\n',''), "Title_Traits": title_matches, "Abstract_Traits": abstract_matches}

@@ -1,2 +1,2 @@
 bert_model/* filter=lfs diff=lfs merge=lfs -text
-CuPUL/data/QTL/* filter=lfs diff=lfs merge=lfs -text
+CuPUL/data/QTL/output/pytorch_model.bin filter=lfs diff=lfs merge=lfs -text

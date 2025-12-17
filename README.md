@@ -81,5 +81,5 @@ docker build -t ner-react .
 ```
 3. Run the Docker container
 ```bash
-docker run --name ner-react-container -p 4173:4173 ner-react
+docker run --name ner-react-container -p 5173:5173 ner-react
 ```

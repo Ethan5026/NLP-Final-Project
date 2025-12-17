@@ -1,0 +1,21 @@
+Detection O 0
+of O 0
+porcine O 1
+circovirus O 1
+type O 0
+3 O 0
+DNA O 0
+in O 0
+serum O 1
+and O 0
+semen O 1
+samples O 0
+of O 0
+boars O 0
+from O 0
+a O 0
+German O 0
+boar O 0
+stud O 0
+. O 0
+

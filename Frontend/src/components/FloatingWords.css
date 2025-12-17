@@ -1,0 +1,59 @@
+.floating-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1; /* behind main content */
+}
+
+.floating-word {
+  position: absolute;
+  color: white; /* base color */
+  white-space: nowrap;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0,0,0,0.7); /* adds contrast */
+  animation-name: float-move, float-fade, float-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-size: 16px; /* base size, can randomize with JS */
+}
+
+/* drift vertically */
+@keyframes float-move {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(-10vh);
+  }
+}
+
+/* fade in/out */
+@keyframes float-fade {
+  0%, 100% {
+    opacity: 0.3; /* increase min opacity */
+  }
+  50% {
+    opacity: 1; /* peak opacity */
+  }
+}
+
+/* slow rotation */
+@keyframes float-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Optional: color classes for trait types */
+.floating-word.I-Trait {
+  color: #28a745; /* green */
+  text-shadow: 0 0 10px #28a745;
+}
+
+.floating-word.dict_Trait {
+  color: #ffc107; /* yellow */
+  text-shadow: 0 0 10px #ffc107;
+}

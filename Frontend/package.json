@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "../../../NLP-Final-Project/qtl-ner-frontend/node_modules/.bin/vite",
-    "build": "../../../NLP-Final-Project/qtl-ner-frontend/node_modules/.bin/vite build",
-    "lint": "../../../NLP-Final-Project/qtl-ner-frontend/node_modules/.bin/eslint .",
-    "preview": "../../../NLP-Final-Project/qtl-ner-frontend/node_modules/.bin/vite preview"
+    "dev": "node_modules/.bin/vite",
+    "build": "node_modules/.bin/vite build",
+    "lint": "node_modules/.bin/eslint .",
+    "preview": "node_modules/.bin/vite preview"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",

@@ -4,7 +4,7 @@ FROM python:3.7
 WORKDIR /app
 
 # Copy files over
-COPY . .
+COPY .. .
 
 # Upgrade pip
 RUN python -m pip install --upgrade pip

@@ -1,6 +1,10 @@
+README.md
 setup.py
 CuPUL/src/cupul.egg-info/PKG-INFO
 CuPUL/src/cupul.egg-info/SOURCES.txt
 CuPUL/src/cupul.egg-info/dependency_links.txt
 CuPUL/src/cupul.egg-info/top_level.txt
+CuPUL/src/cupul.egg-info/PKG-INFO
 CuPUL/src/cupul.egg-info/SOURCES.txt
+CuPUL/src/cupul.egg-info/dependency_links.txt
+CuPUL/src/cupul.egg-info/top_level.txt

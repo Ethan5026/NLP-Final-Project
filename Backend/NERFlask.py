@@ -1,11 +1,12 @@
 import re
 from flask import Flask, jsonify
-
+from flask_cors import CORS
 from CuPUL.src.NERClassifier import NERClassifier
 from QTLDataManager import QTLDataManager
 
 
 app = Flask(__name__)
+CORS(app)
 
 qtl_manager = QTLDataManager()
 
